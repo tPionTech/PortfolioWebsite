@@ -10,6 +10,7 @@
   text-align: center;
   font-size: 20px;
   justify-content: center;
+  z-index: 99;
   
 }
 .nav a {
@@ -31,10 +32,9 @@
   @media screen and (max-width: 992px) {
     .nav {
       flex-direction: column;
-  
     }
     .nav div {
-      padding:5px 0px;
+      padding:2px 0px;
       margin-left: 0px;
       cursor:pointer;
     }

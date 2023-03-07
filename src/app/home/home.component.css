@@ -1,17 +1,37 @@
 .home {
-    padding-top: 15px;
     text-align: center;
-    background-color: #eee;
     height: 100vh;
-    display: block;
   }
 
-  .two-columns{
-    flex-direction: row;
+  .backgroundPic {
+    background-image: url("../../assets/road.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 0;
   }
 
-  .home div {
-    background-color: rgb(0,0,0,40%);
+  .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profilePic {
+    z-index: 2;
+  }
+
+  .text {
+    z-index: 2;
+    color:antiquewhite;
+    width: 100%;
+    height: 100%;
   }
   
   .home h1 {
@@ -20,4 +40,10 @@
   
   .home p {
     font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 992px) {
+    .backgroundPic {
+      padding-top: 150px;
+    }
   }

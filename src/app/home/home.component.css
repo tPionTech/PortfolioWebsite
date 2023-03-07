@@ -1,0 +1,23 @@
+.home {
+    padding-top: 15px;
+    text-align: center;
+    background-color: #eee;
+    height: 100vh;
+    display: block;
+  }
+
+  .two-columns{
+    flex-direction: row;
+  }
+
+  .home div {
+    background-color: rgb(0,0,0,40%);
+  }
+  
+  .home h1 {
+    font-size: 3rem;
+  }
+  
+  .home p {
+    font-size: 1.5rem;
+  }
